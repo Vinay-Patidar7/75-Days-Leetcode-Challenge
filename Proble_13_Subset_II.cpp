@@ -25,13 +25,8 @@ public:
        vector<int>v;
        int i=0;
        solve(i,nums,v);
-       map<vector<int>, int> mp;
-        for(auto it : ans){
-            mp[it]++;
-        }
-
         vector<vector<int>>res;
-        for(auto it:mp) res.push_back(it.first);
+        for(auto it:ans) res.push_back(it);
        return res;
     }
 };
